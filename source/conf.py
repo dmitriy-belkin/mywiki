@@ -36,6 +36,8 @@ html_theme_options = {
     "show_toc_level": 2,
 }
 
+html_css_files = ["custom.css"]
+
 html_static_path = ['_static']
 
 #custom css
