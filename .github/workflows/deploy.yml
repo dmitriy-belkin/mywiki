@@ -23,10 +23,15 @@ jobs:
           pip install -r requirements.txt
 
       - name: Build documentation
-        run: make html
+        run: |
+          sphinx-build -b html source build/html
+
+      - name: Create .nojekyll
+        run: touch build/html/.nojekyll
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: build/html
+          clean: true  # Удаляет старые файлы перед загрузкой
