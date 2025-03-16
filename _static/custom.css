@@ -1,0 +1,11 @@
+.bd-sidebar-primary {
+    width: 280px !important; /* Уменьшает ширину боковой панели */
+}
+
+.bd-container {
+    max-width: 100% !important; /* Растягивает контент на всю ширину */
+}
+
+.bd-sidebar {
+    overflow: hidden !important; /* Убирает лишний скролл */
+}
