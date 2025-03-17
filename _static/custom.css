@@ -1,11 +1,48 @@
-.bd-sidebar-primary {
-    width: 280px !important; /* Уменьшает ширину боковой панели */
+/* Убираем лишний отступ слева */
+.bd-main {
+    margin-left: 0px !important;
 }
 
+/* Настроим максимальную ширину контейнера */
 .bd-container {
-    max-width: 100% !important; /* Растягивает контент на всю ширину */
+    max-width: 80% !important;
+    margin: 0 auto;
 }
 
-.bd-sidebar {
-    overflow: hidden !important; /* Убирает лишний скролл */
+/* Улучшим боковую панель */
+.bd-sidebar-primary {
+    width: 250px !important; /* Сделаем боковую панель уже */
+    background-color: #1e1e1e; /* Тёмный фон */
+    color: #ffffff; /* Белый текст */
+}
+
+/* Улучшаем заголовки и карточки */
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+.bd-sidebar a {
+    color: #d1d1d1 !important; /* Улучшение цвета ссылок */
+}
+
+.bd-sidebar a:hover {
+    color: #ffffff !important;
+}
+
+/* Стили для карточек (как в HOWTO) */
+.card {
+    border-radius: 8px;
+    padding: 15px;
+    background: #252526;
+    border: 1px solid #3a3a3a;
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    background: #2e2e2e;
+}
+
+/* Убираем вертикальный скролл */
+html, body {
+    overflow-x: hidden;
 }
