@@ -10,5 +10,5 @@ linkify-it-py==2.0.3
 setuptools>=45.0.0
 
 # Установка локальных расширений
--e localextensions/sphinxcontrib-images
--e example-plate
+-e /localextensions/sphinxcontrib-images
+-e /example-plate
