@@ -8,7 +8,12 @@ RUN pip3 install --upgrade \
     sphinx-book-theme \
     sphinx-design \
     linkify-it-py \
-    sphinx-copybutton
+    sphinxcontrib-plantuml \
+    sphinx-copybutton \
+    setuptools \
+    /docs/localextensions/sphinxcontrib-images \
+    /docs/localextensions/example-plate
+
 
 RUN make clean html
 

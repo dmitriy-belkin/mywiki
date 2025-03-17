@@ -14,7 +14,7 @@ release = '1'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['myst_parser', 'sphinx_design', 'sphinxcontrib.plantuml', 'sphinx_copybutton']
+extensions = ['myst_parser', 'sphinx_design', 'sphinxcontrib.images', 'sphinxcontrib.plantuml', 'sphinx_copybutton', 'example_plate']
 myst_enable_extensions = {
     'colon_fence',
     'tasklist',
