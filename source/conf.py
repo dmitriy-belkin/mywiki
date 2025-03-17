@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'mywiki'
+project = 'MyWiki'
 copyright = '2025, Dmitriy Belkin'
 author = 'Dmitriy Belkin'
 release = '1'
@@ -14,10 +14,21 @@ release = '1'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = []
+extensions = ['myst_parser', 'sphinx_design', 'sphinxcontrib.plantuml', 'sphinx_copybutton']
+myst_enable_extensions = {
+    'colon_fence',
+    'tasklist',
+    'attrs_block',
+    'attrs_inline',
+    'linkify',
+    'fieldlist',
+}
+
+plantuml = 'java -jar /docs/plantuml.jar' # поддержка PlantUML
 
 templates_path = ['_templates']
-exclude_patterns = []
+
+exclude_patterns = ['_includes/*']
 
 language = 'ru'
 
@@ -33,12 +44,18 @@ html_theme_options = {
     "show_navbar_depth": 2,
     "use_fullscreen_button": False,
     "home_page_in_toc": True,
-    "show_toc_level": 2,
+    "toc_title": " На этой странице:",
+    "article_header_start": "breadcrumbs", # хлебные крошки в хедере
+    "max_navbar_depth": 3, # регулирует глубину содержания в левом навбаре
+    "show_toc_level": 4, # регулирует глубину содержания в правом навбаре
+
 }
 
-html_css_files = ["custom.css"]
+html_css_files = ["css/custom.css"]
 
 html_static_path = ['_static']
 
 #custom css
-html_title = "My Wiki"
+html_show_sphinx = 0
+html_favicon = '_static/favicon.ico'
+html_logo = '_static/logo.png'
