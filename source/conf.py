@@ -39,10 +39,10 @@ html_theme = 'sphinx_book_theme'
 
 html_theme_options = {
     "repository_url": "https://github.com/dmitriy-belkin/mywiki",
-    "use_repository_button": True,
-    "use_edit_page_button": True,
-    "show_navbar_depth": 2,
-    "use_fullscreen_button": False,
+    # "use_repository_button": True,
+    # "use_edit_page_button": True,
+    # "show_navbar_depth": 2,
+    # "use_fullscreen_button": False,
     "home_page_in_toc": True,
     "toc_title": " На этой странице:",
     "article_header_start": "breadcrumbs", # хлебные крошки в хедере
